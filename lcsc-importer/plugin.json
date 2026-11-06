@@ -1,0 +1,21 @@
+{
+    "$schema": "https://go.kicad.org/api/schemas/v1",
+    "identifier": "com.thoma.lcsc-importer",
+    "name": "LCSC Importer",
+    "description": "Imports symbol, footprint and 3D model of an LCSC part (via EasyEDA) into a KiCad library following the EDENLibrary conventions.",
+    "runtime": {
+        "type": "python"
+    },
+    "actions": [
+        {
+            "identifier": "import_lcsc",
+            "name": "LCSC Importer",
+            "description": "Opens a dialog to add an LCSC part to a library.",
+            "show-button": true,
+            "scopes": ["pcb", "schematic"],
+            "entrypoint": "import_lcsc.py",
+            "icons-light": ["icons/importer-light.png", "icons/importer-light@2x.png"],
+            "icons-dark": ["icons/importer-dark.png", "icons/importer-dark@2x.png"]
+        }
+    ]
+}
